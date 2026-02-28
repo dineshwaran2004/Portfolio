@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* ========================= */
+/* HERO CONTAINER */
+/* ========================= */
+
+.container {
+  min-height: 95vh;   /* FIXED (was height:95vh) */
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 35px 80px;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(199, 23, 23);
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.contact-btn {
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: black;
+  color: white;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero {
+  display: flex;
+  min-height: 95vh;
+}
+
+.left {
+  width: 55%;
+  background: #f1f1f1;
+  padding: 200px 120px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+.left h4 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.left h1 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.left p {
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 26px;
+}
+
+/* SOCIAL ICONS */
+
+.socials {
+  display: flex;
+  gap: 25px;
+  justify-content: center;   
+  align-items: center;       
+  margin-top: 30px;
+}
+
+.box {
+  width: 55px;
+  height: 55px;
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* RIGHT IMAGE */
+
+.right {
+  width: 185%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================= */
+/* COMMON SECTION STYLE */
+/* ========================= */
+
+section {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  border: 3px solid black;
+  display: inline-block;
+  padding: 10px 40px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+/* ========================= */
+/* ABOUT */
+/* ========================= */
+
+.about-section {
+  background: #f5f5f5;
+}
+
+.about-text {
+  max-width: 650px;
+  margin: auto;
+  color: #666;
+  line-height: 28px;
+}
+
+/* ========================= */
+/* SKILLS */
+/* ========================= */
+
+.skills-section {
+  background: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skill-item i {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.skill-item p {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+/* Skill Colors */
+
+.html { color: #e44d26; }
+.css { color: #1572b6; }
+.js { color: #f7df1e; }
+.react { color: #61dbfb; }
+.bootstrap { color: #7952b3; }
+.git { color: #f34f29; }
+.python { color: #3776ab; }
+.mysql { color: #00758f; }
+.django { color: #0c4b33; }
+.canva { color: #00c4cc; }
+
+/* ========================= */
+/* PROJECTS */
+/* ========================= */
+
+.projects-section {
+  background: #f5f5f5;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+}
+
+/* ========================= */
+/* CERTIFICATIONS */
+/* ========================= */
+
+.certifications {
+  background: white;
+}
+
+.cert-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.cert-card {
+  background: #f9f9f9;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ========================= */
+/* RESUME SECTION */
+/* ========================= */
+
+.resume-section {
+  background: #f5f5f5;
+}
+
+.resume-section p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background: #333;
+}
+
+/* ========================= */
+/* CONTACT */
+/* ========================= */
+
+.contact-section {
+  background: white;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  line-height: 30px;
+}
+
+.contact-social {
+  margin-top: 20px;
+}
+
+.contact-social a {
+  margin: 0 15px;
+  font-size: 24px;
+  color: black;
+  transition: 0.3s;
+}
+
+.contact-social a:hover {
+  color: #555;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .left {
+    width: 100%;
+    clip-path: none;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 36px;
+  }
+
+  .right {
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .right img {
+    width: 180%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .cert-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-resume-btn {
+  margin-top: 20px;
+}
+}
+.hero-resume-btn {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 12px 30px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-resume-btn:hover {
+  background: #333;
+  transform: translateY(-3px);
+}

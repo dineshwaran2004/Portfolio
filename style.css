@@ -83,7 +83,7 @@ nav a:hover {
   letter-spacing: 0.15em;
 }
 .left h1 {
-  font-size: clamp(32px, 4.5vw, 58px);
+  font-size: clamp(26px, 4.5vw, 50px);
   font-weight: 800;
   font-family: "Syne", sans-serif;
   margin-bottom: 18px;
@@ -931,7 +931,7 @@ footer p {
     text-align: center;
   }
   .left h1 {
-    font-size: 29px;
+    font-size: 25px;
     white-space: normal;
   }
   .left p {
